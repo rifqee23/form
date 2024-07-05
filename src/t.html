@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Input with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="relative inline-block">
+      <label class="px-4 py-2 text-white bg-blue-500 rounded cursor-pointer"
+        >Choose File</label
+      >
+      <input
+        type="file"
+        class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+        onchange="updateFileName()"
+      />
+      <span id="file-name" class="ml-4 italic"></span>
+    </div>
+
+    <script>
+      function updateFileName() {
+        const input = document.querySelector('input[type="file"]');
+        const fileNameSpan = document.getElementById("file-name");
+        if (input.files.length > 0) {
+          fileNameSpan.textContent = input.files[0].name;
+        } else {
+          fileNameSpan.textContent = "";
+        }
+      }
+    </script>
+  </body>
+</html>
