@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function MLRegistrationForm() {
+export default function FutsalRegistrationForm() {
   return (
     <form method="post" encType="multipart/form-data">
       {/* Profile Ketua Start */}
