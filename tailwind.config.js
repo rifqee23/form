@@ -22,7 +22,7 @@ module.exports = {
         'custom' : '1px 1px 40px rgba(0,0,0,0.2), 0 -1px 10px rgba(0,0,0,0.1)',
        },
        fontSize: {
-        'heading' : '2rem',
+        'heading' : '2.5rem',
         'sub-heading' : '1.75rem'
 
        },

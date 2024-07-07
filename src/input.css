@@ -4,7 +4,7 @@
 
 @layer components {
     .subHeading {
-        @apply text-sub-heading font-bold text-primary;
+        @apply text-4xl font-bold text-primary;
     }
 
     .textParagraph {
