@@ -11,7 +11,7 @@ module.exports = {
        backgroundColor: {
         'custom-gray': 'rgba(217, 217, 217, 0.2)',
         green: {
-          400: '#13DE33', // Misalnya, hijau terang
+          400: '#13DE33', 
   
         }
        },
