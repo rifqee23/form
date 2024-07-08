@@ -6,6 +6,11 @@ module.exports = {
       center: true
     },
     extend: {
+
+      screens: {
+        'xs' : '580px',
+        'sxl' :'920px'
+      },
     
        backgroundImage: {
         'gradient-three-colors': 'linear-gradient(to right, #F72585, #5F69D3, #7209B7)',
@@ -31,5 +36,8 @@ module.exports = {
        }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+
+  ],
 }
