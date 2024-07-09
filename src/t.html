@@ -3,42 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll to Display with Animation</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Scroll Reveal Example</title>
   <style>
-    @keyframes fade-down {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-  
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .hidden {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
     }
-  
-    .animate-fade-down {
-      animation: fade-down 0.5s ease-out forwards;
+    .visible {
+      opacity: 1;
+    }
+    .content {
+      height: 100vh; /* For demonstration, make each section fill the viewport height */
     }
   </style>
-  </head>
-<body class="min-h-screen">
-  <section id="content"
-    class="hidden md:grid md:grid-cols-2 md:gap-x-8 md:place-items-center lg:flex lg:gap-10 lg:justify-center lg:mt-16">
-    <div class="p-4 bg-blue-500 text-white">Konten 1</div>
-    <div class="p-4 bg-green-500 text-white">Konten 2</div>
-  </section>
+</head>
+<body>
 
-  <script>
-                  window.addEventListener('scroll', function () {
-                    const content = document.getElementById('content');
-                    if (window.scrollY > 100 && content.classList.contains('hidden')) { // Ubah 100 ke posisi scroll yang diinginkan
-                      content.classList.remove('hidden');
-                      content.classList.add('animate-fade-down');
-        }
-                });
-    </script>
-  </body>
+<h1>Scroll to Reveal Content</h1>
+<div class="content" id="section1">
+  <p>This is section 1. Scroll down to reveal more content.</p>
+</div>
+<div class="content hidden" id="section2">
+  <p>This is section 2. It is hidden initially and will be revealed when scrolled into view.</p>
+</div>
+<div class="content hidden" id="section3">
+  <p>This is section 3. It is also hidden initially and will be revealed when scrolled into view.</p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const hiddenElements = document.querySelectorAll('.hidden');
+
+  const revealOnScroll = () => {
+    const viewportHeight = window.innerHeight;
+
+    hiddenElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < viewportHeight) {
+        el.classList.add('visible');
+        el.classList.remove('hidden');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Run on page load in case elements are already in view
+});
+
+</script>
+</body>
 </html>
-z

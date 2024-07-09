@@ -32,7 +32,17 @@ module.exports = {
 
        },
        textColor: {
-        'primary' : '#132D46'
+        'primary' : '#132D46',
+        'secondary' : '#7209B7'
+       },
+       animation: {
+        "loop-scroll" : "loop-scroll 50s linear infinite",
+       },
+       keyframes: {
+        "loop-scroll" : {
+          from : { transform: "translateX(0)"},
+          to: { transform: "translateX(-100%)"},
+        }
        }
     },
   },

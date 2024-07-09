@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .paused {
+        animation-play-state: paused;
+    }
+}
+
 @layer components {
     .subHeading {
         @apply text-4xl font-bold text-primary;
@@ -10,23 +16,4 @@
     .textParagraph {
         @apply text-base text-slate-600 mt-2;
     }
-.logos:before,
-.logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: '';
-    z-index: 2;
-
-    .logos:before {
-        left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-    }
-
-    .logos:after {
-        right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-    }
-}
 }
