@@ -610,6 +610,30 @@ video {
   margin-top: 2rem;
 }
 
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-72 {
+  margin-top: 18rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
 .block {
   display: block;
 }
@@ -1098,6 +1122,14 @@ video {
 
   .lg\:mt-56 {
     margin-top: 14rem;
+  }
+
+  .lg\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:flex {
