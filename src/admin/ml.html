@@ -143,21 +143,27 @@
             if (side.classList.contains('hidden')) {
                 side.classList.remove('hidden');
                 sideAnimate.classList.add('animate-down');
-                sideAnimate.classList.remove('animate-up');
-
+                sideAnimate.classList.remove('animate-up'); // Menghapus animasi saat menyembunyikan
                 title.classList.add('opacity-0');
                 header.classList.remove('bg-white');
 
 
             } else {
                 sideAnimate.classList.remove('animate-down');
-                sideAnimate.classList.add('animate-up');
+                sideAnimate.classList.add('animate-up'); // Menghapus animasi saat menyembunyikan
+                setTimeout(() => {
+                    side.classList.add('hidden');
+                }, 300); // Sesuaikan dengan durasi animasi Anda                
                 title.classList.remove('opacity-0');
-                side.classList.add('hidden');
                 header.classList.add('bg-white');
-
             }
         });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 768) {
+                sideAnimate.classList.remove('animate-up'); // Menghapus animasi saat menyembunyikan
+        }
+    })
     </script>
 </body>
 
