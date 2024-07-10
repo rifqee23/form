@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Admin</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="./../output.css">
     <script src="https://kit.fontawesome.com/fbda0dcbb4.js" crossorigin="anonymous"></script>
 
@@ -30,11 +30,11 @@
                             <button id="dashboard" type="button"
                                 class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 border-b-blue-gray-100 text-blue-gray-900 hover:text-blue-gray-900">
                                 <div class="grid mr-4 place-items-center">
-                                    <i class="fa-solid fa-code"></i>
+                                    <i class="fa-solid fa-house"></i>
                                 </div>
                                 <p
                                     class="block mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
-                                    CPC
+                                    Home
                                 </p>
                             </button>
                         </div>
@@ -45,53 +45,19 @@
                             class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-cyan-100 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
                             <button id="btnMembers" type="button"
                                 class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 border-b-blue-gray-100 text-blue-gray-700 hover:text-blue-gray-900">
-                                <div class="grid mr-6 place-items-center">
-                                    <i class="fa-solid fa-stopwatch "></i>
-                                </div>
-                                <p
-                                    class="block  mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
-                                    LCT
-                                </p>
-                            </button>
-                        </div>
-                            
-                    </div>
-                    <!-- End LCT -->
-
-                    <div class="relative block w-full">
-                        <div role="button"
-                            class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start hover:bg-cyan-100 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
-                            <button id="btnMembers" type="button"
-                                class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 border-b-blue-gray-100 text-blue-gray-700 hover:text-blue-gray-900">
                                 <div class="grid mr-5 place-items-center">
-                                    <i class="fa-regular fa-futbol"></i>                                
+                                    <i class="fa-regular fa-credit-card"></i>                                
                                 </div>
                                 <p
                                     class="block  mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
-                                    Futsal
+                                    Payment
                                 </p>
                             </button>
                         </div>
                             
                     </div>
                     <!-- End Futsal -->
-                    <div class="relative block w-full">
-                        <div role="button"
-                            class="flex items-center w-full p-0 leading-tight transition-all rounded-lg outline-none text-start bg-cyan-100 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
-                            <button id="btnMembers" type="button"
-                                class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 border-b-blue-gray-100 text-blue-gray-700 hover:text-blue-gray-900">
-                                <div class="grid mr-4 place-items-center">
-                                    <i class="fa-solid fa-gamepad"></i>                                
-                                </div>
-                                <p
-                                    class="block  mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
-                                    Mobile Legend
-                                </p>
-                            </button>
-                        </div>
-                            
-                    </div>
-                    <!-- End Futsal -->
+                    
                     
                     
                     <hr class="my-2 border-blue-gray-50" />
@@ -120,9 +86,8 @@
                         <i id="hamburger" class="fa-solid fa-bars-staggered text-2xl"></i>
                     </div>
                     <div id="title"
-                        class="flex flex-col mx-auto items-center md:items-center md:flex-row md:justify-between px-12 md:w-full">
-                        <h3 class="text-center text-secondary font-semibold text-2xl">Payment Information ML</h3>
-                        <h3 class="text-center text-secondary font-semibold text-2xl">Admin</h3>
+                        class="md:w-full">
+                        <h3 class="text-center md:text-start text-secondary font-semibold text-2xl">Payment</h3>
                     </div>
                 </div>
             </header>
@@ -133,31 +98,27 @@
                             <table class="min-w-full  border border-gray-200 ">
                                 <thead>
                                     <tr>
-                                        <th class="py-3 px-8 border-b ">Divisi</th>
-                                        <th class="py-3 px-8 border-b">Nama Tim</th>
-                                        <th class="py-3 px-8 border-b">Nama Pendaftar</th>
-                                        <th class="py-3 px-8 border-b">Bukti Pembayaran</th>
-                                        <th class="py-3 px-8 border-b">Status Pembayaran</th>
-                                        <th class="py-3 px-8 border-b">Action</th>
-                                        </tr>
+                                        <th class="py-3 px-8 border-b">Lomba</th>
+                                        <th class="py-3 px-8 border-b">Tanggal Transaksi</th>
+                                        <th class="py-3 px-8 border-b">Jumlah Biaya Pendaftaran</th>
+                                        <th class="py-3 px-8 border-b">Status Administrasi</th>
+                                        <th class="py-3 px-8 border-b">Opsi</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="py-3 px-8 border-b text-center">ML</td>
-                                        <td class="py-3 px-8 border-b text-center">asal-asalan</td>
-                                        <td class="py-3 px-8 border-b text-center">Qee</td>
-                                        <td class="py-3 px-8 border-b text-center">asalan.jpeg</td>
-                                        <td class="py-3 px-8 border-b text-center"><span
-                                                class="bg-red-100 text-red-500 font-semibold px-2 py-1 rounded-full">Pending</span>
+                                        <td class="py-3 px-8 border-b text-center">10/07/2024</td>
+                                        <td class="py-3 px-8 border-b text-center">Rp 50.000</td>
+                                        <td class="py-3 px-8 border-b text-center">
+                                            <span
+                                                class="bg-red-100 text-red-500 font-semibold px-2 py-1 rounded-full">Pending
+                                            </span>
                                         </td>
                                         <td class="py-3 px-8 border-b text-center">
-                                                <button
-                                                    class="whitespace-nowrap justify-between gap-4  xl:justify-around bg-opacity-80 hover:bg-opacity-100 bg-emerald-400 text-white font-bold py-1 px-2 rounded-lg">
-                                                    Ubah Status
-                                                </button>
-                                                
-                                
+                                            
                                         </td>
+                                        
                                     </tr>
                                 </tbody>
                                 </table>
