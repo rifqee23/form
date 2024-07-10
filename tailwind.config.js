@@ -41,12 +41,23 @@ module.exports = {
        },
        animation: {
         "loop-scroll" : "loop-scroll 50s linear infinite",
+        'down': 'down .4s ease-in-out forwards',
+        'up': 'up .4s ease-in-out forwards',
        },
        keyframes: {
         "loop-scroll" : {
           from : { transform: "translateX(0)"},
           to: { transform: "translateX(-100%)"},
-        }
+        },
+        "down" : {
+          '0%' : {transform : 'translateY(-100%)'},
+          '100%' : {transform : 'translateY(0%)'}
+        },
+        "up" : {
+          '0%' : {transform : 'translateY(0%)'},
+          '100%' : {transform : 'translateY(-100%)'}
+        },
+
        },
        borderColor: {
         'primary' : "#7209B7",
