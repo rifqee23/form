@@ -630,8 +630,8 @@ video {
   position: relative;
 }
 
-.left-3 {
-  left: 0.75rem;
+.left-4 {
+  left: 1rem;
 }
 
 .z-20 {
@@ -866,6 +866,10 @@ video {
   animation: up .4s ease-in-out forwards;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
@@ -876,10 +880,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .flex-nowrap {
@@ -1161,8 +1161,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-left {
