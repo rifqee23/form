@@ -4,42 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-gray-100">
-  <div class="flex min-h-screen">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-800 text-white fixed h-full">
-      <div class="p-4 text-center text-xl font-bold border-b border-gray-700">
-        Admin Dashboard
-      </div>
-      <nav class="mt-4">
-        <ul>
-          <li class="px-4 py-2 hover:bg-gray-700">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-gray-700">
-            <a href="#">Users</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-gray-700">
-            <a href="#">Settings</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-gray-700">
-            <a href="#">Reports</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-gray-700">
-            <a href="#">Logout</a>
-          </li>
-        </ul>
-      </nav>
-      </aside>
-
-    <!-- Main Content -->
-    <main class="flex-1 ml-64 p-6">
-      <h1 class="text-2xl font-bold mb-4">Welcome to the Admin Dashboard</h1>
-      <p class="mb-4">This is the main content area.</p>
-      <!-- Add more content here -->
-    </main>
+  <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click outside to close</p>
   </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
 </body>
 </html>
