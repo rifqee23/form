@@ -1753,10 +1753,6 @@ video {
     justify-content: center;
   }
 
-  .xl\:justify-around {
-    justify-content: space-around;
-  }
-
   .xl\:gap-10 {
     gap: 2.5rem;
   }
