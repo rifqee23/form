@@ -3,28 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Admin Dashboard</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <div class="" onclick="my_modal_4.showModal()">
-        <img src="asset/Logo CSS 1.png" alt="">
-    </div>
-
-    <dialog id="my_modal_4" class="modal backdrop-blur-md relative">
-
-        <div>
-            <div class="relative">
-                <img src="asset/Logo CSS 1.png" alt="">
+<body class="bg-gray-100">
+    <!-- Sidebar -->
+    <aside class="fixed left-0 top-0 h-full w-48 bg-white border-r border-gray-200">
+        <!-- Sidebar content -->
+        <div class="p-4">
+            <!-- Logo -->
+            <div class="flex items-center justify-center mb-4">
+                <img src="./path/to/logo.png" alt="Logo" class="w-10 h-10">
             </div>
-
-          <div class="modal-action">
-            <form class="absolute top-10 right-5 md:top-10 md:right-20" >
-              <!-- if there is a button, it will close the modal -->
-              <button class="btn">X</button>
-            </form>
-          </div>
+            <!-- Navigation links -->
+            <nav>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-200 hover:text-gray-800">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-200 hover:text-gray-800">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-200 hover:text-gray-800">Orders</a>
+                    </li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
         </div>
-      </dialog>
+    </aside>
+
+    <!-- Main content -->
+    <main class="ml-48 pt-16"> <!-- Adjust margin-left to match sidebar width and add top padding to prevent content under navbar -->
+        <!-- Navbar -->
+        <header class="fixed top-0 left-48 right-0 z-50 bg-white shadow-md">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between py-2">
+                    <!-- Left side of Navbar (Brand/logo) -->
+                    <div>
+                        <h1 class="text-lg font-semibold text-gray-800">Admin Dashboard</h1>
+                    </div>
+                    <!-- Right side of Navbar (Profile/Actions) -->
+                    <div>
+                        <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <div class="container mx-auto p-4">
+            <h2 class="text-2xl font-semibold text-gray-800">Welcome to Admin Dashboard</h2>
+            <!-- Add your content here -->
+        </div>
+    </main>
+
+    <!-- Tailwind CSS and any JavaScript libraries -->
+    <!-- You can also move these to the end of the body if needed -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <!-- Font Awesome for icons (you can replace with CDN or local link) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
