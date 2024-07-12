@@ -64,7 +64,7 @@
                             <button id="btnMembers" type="button"
                                 class="flex items-center justify-between w-full p-3 font-sans text-xl antialiased font-semibold leading-snug text-left transition-colors border-b-0 border-b-blue-gray-100 text-blue-gray-700 hover:text-blue-gray-900">
                                 <div class="grid mr-5 place-items-center">
-                                    <i class="fa-regular fa-futbol"></i>                                
+                                    <i class="fa-regular fa-futbol "></i>                                
                                 </div>
                                 <p
                                     class="block  mr-auto font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
@@ -116,7 +116,7 @@
             <header class="fixed top-0 left-0  md:left-72 right-0  z-30">
                 <div id="header" class="relative flex items-center  bg-white py-2 md:p-4">
                     <div class="md:hidden z-50 absolute left-4 top-4">
-                        <i id="hamburger" class="fa-solid fa-bars-staggered text-2xl"></i>
+                        <i id="hamburger" class="fa-solid fa-bars-staggered text-2xl "></i>
                     </div>
                     <div id="title"
                         class="flex flex-col  items-center md:items-center md:flex-row md:justify-between w-full px-12 ">
@@ -208,40 +208,46 @@
     </section>
 
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const side = document.getElementById('sidebar');
-        const sideAnimate = document.getElementById('sideAnimate');
-        const title = document.getElementById('title');
-        const header = document.getElementById('header');
+   <script>
+    const hamburger = document.getElementById('hamburger');
+const side = document.getElementById('sidebar');
+const sideAnimate = document.getElementById('sideAnimate');
+const title = document.getElementById('title');
+const header = document.getElementById('header');
 
-        hamburger.addEventListener('click', function () {
-            if (side.classList.contains('hidden')) {
-                side.classList.remove('hidden');
-                sideAnimate.classList.add('animate-down');
-                sideAnimate.classList.remove('animate-up'); // Menghapus animasi saat menyembunyikan
-                title.classList.add('opacity-0');
-                header.classList.remove('bg-white');
-                hamburger.classList.replace('fa-bars-staggered', 'fa-xmark')
+hamburger.addEventListener('click', function () {
+    if (side.classList.contains('hidden')) {
+        side.classList.remove('hidden');
+        sideAnimate.classList.add('animate-down');
+        sideAnimate.classList.remove('animate-up');
+        title.classList.add('opacity-0');
+        header.classList.remove('bg-white');
+        hamburger.classList.replace('fa-bars-staggered', 'fa-xmark')
+    } else {
+        sideAnimate.classList.remove('animate-down');
+        sideAnimate.classList.add('animate-up');
+        setTimeout(() => {
+            side.classList.add('hidden');
+        }, 300);
+        title.classList.remove('opacity-0');
+        header.classList.add('bg-white');
+        hamburger.classList.replace('fa-xmark', 'fa-bars-staggered')
+    }
+        const parentElement = hamburger.parentElement;
+    parentElement.classList.add('animate-spin', 'animate-once');
+    
+    setTimeout(() => {
+        parentElement.classList.remove('animate-spin', 'animate-once', 'animate-duration-[600ms]');
+    }, 500); 
+});
 
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 768) {
+        sideAnimate.classList.remove('animate-up');
+    }
+});
 
-            } else {
-                sideAnimate.classList.remove('animate-down');
-                sideAnimate.classList.add('animate-up'); // Menghapus animasi saat menyembunyikan
-                setTimeout(() => {
-                    side.classList.add('hidden');
-                }, 300); // Sesuaikan dengan durasi animasi Anda                
-                title.classList.remove('opacity-0');
-                header.classList.add('bg-white');
-            }
-        });
-
-        window.addEventListener('resize', function () {
-            if (window.innerWidth >= 768) {
-                sideAnimate.classList.remove('animate-up'); // Menghapus animasi saat menyembunyikan
-        }
-    })
-    </script>
+   </script>
 </body>
 
 </html>

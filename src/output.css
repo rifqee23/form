@@ -1888,6 +1888,16 @@ html {
   animation: loop-scroll 50s linear infinite;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin var(--tw-animate-duration, 1s) var(--tw-animate-easing, linear) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
+}
+
 @keyframes up {
   0% {
     transform: translateY(0%);
@@ -2115,11 +2125,6 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -2461,6 +2466,16 @@ html {
 .animate-delay-500 {
   --tw-animate-delay: 500ms;
   animation-delay: var(--tw-animate-delay);
+}
+
+.animate-duration-\[600ms\] {
+  --tw-animate-duration: 600ms;
+  animation-duration: var(--tw-animate-duration);
+}
+
+.animate-once {
+  --tw-animate-iteration: 1;
+  animation-iteration-count: var(--tw-animate-iteration);
 }
 
 @media (min-width: 768px) {
