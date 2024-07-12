@@ -1697,6 +1697,10 @@ html {
   top: 1.25rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1885,6 +1889,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .min-w-\[240px\] {
