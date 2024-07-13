@@ -183,17 +183,18 @@
                                         </dialog> 
                                     </div>
 
-                                    <div class="form-control  mt-2">
+                                    <div class="form-control mt-2">
                                         <div class="label">
                                             <span class="label-text">Status Pembayaran</span>
                                         </div>
-                                        <select class="select select-bordered w-full max-w-xs">
+                                        <select id="status-pembayaran" name="statusPembayaran" class="select select-bordered w-full max-w-xs">
                                             <option disabled selected>Pick One</option>
-                                            <option>Pending</option>
-                                            <option>Verified</option>
-                                          </select>
-                                          <button class="bg-primary text-gray-200 font-semibold bg-opacity-80 hover:bg-opacity-100 dark:bg-opacity-80 dark:bg-slate-900 max-w-xs w-full py-2 rounded-full mt-4">Save</button>
+                                            <option value="pending">Pending</option>
+                                            <option value="verified">Verified</option>
+                                        </select>
+                                        <button class="bg-primary text-gray-200 font-semibold bg-opacity-80 hover:bg-opacity-100 dark:bg-opacity-80 dark:bg-slate-900 max-w-xs w-full py-2 rounded-full mt-4">Save</button>
                                     </div>
+                                    
                                 </div>
                                 </div>
                             </form>
