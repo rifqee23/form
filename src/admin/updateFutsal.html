@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Update Futsal</title>
     <link rel="stylesheet" href="./../output.css">
     <script src="https://kit.fontawesome.com/fbda0dcbb4.js" crossorigin="anonymous"></script>
 
@@ -135,34 +135,28 @@
                                     <div class="w-full max-w-xs lg:max-w-lg  lg:flex lg:gap-5 lg:justify-center lg:mx-auto ">
                                     
                                         <div class="form-control ">
-                                            <div class="label">
-                                                <span class="label-text">Divisi</span>
-                                            </div>
-                                            <input type="text" placeholder="Type here" value="ML" class="input input-bordered w-full max-w-xs" readonly/>    
+                                            <label class="label" for="name">
+                                                <span class="label-text">Nama Pendaftar</span>
+                                            </label>
+                                            <input id="name" type="text" placeholder="Type here" value="Qee" class="input input-bordered w-full max-w-xs" readonly/>    
                                         </div>
                                        
     
                                         <div class="form-control ">
-                                            <div class="label">
+                                            <label class="label" for="teamName">
                                                 <span class="label-text">Nama Tim</span>
-                                            </div>
-                                            <input type="text" placeholder="Type here" value="asalan" class="input input-bordered w-full max-w-xs" readonly/>    
-                                            <p>lorem</p>
+                                            </label>
+                                            <input id="teamName" type="text" placeholder="Type here" value="asalan" class="input input-bordered w-full max-w-xs" readonly/>    
                                         </div>
                                     </div>
                                     <div class="w-full max-w-xs lg:max-w-md  lg:mx-auto ">
-                                        <div class="form-control ">
-                                            <div class="label">
-                                                <span class="label-text">Nama Pendaftar</span>
-                                            </div>
-                                            <input type="text" placeholder="Type here" value="Qee" class="input input-bordered w-full max-w-xs" readonly/>    
-                                        </div>
+                                        
                                     
 
                                     <div class="form-control ">
-                                        <div class="label">
+                                        <label class="label">
                                             <span class="label-text">Bukti Pembayaran</span>
-                                        </div>
+                                        </label>
                                         
                                         <button type="button" onclick="document.getElementById('my_modal_11').showModal()">
                                             <img class="hover:cursor-pointer w-72" src="../asset/mceclip14.png" alt="">
@@ -184,9 +178,9 @@
                                     </div>
 
                                     <div class="form-control mt-2">
-                                        <div class="label">
+                                        <label class="label" for="status-pembayaran">
                                             <span class="label-text">Status Pembayaran</span>
-                                        </div>
+                                        </label>
                                         <select id="status-pembayaran" name="statusPembayaran" class="select select-bordered w-full max-w-xs">
                                             <option disabled selected>Pick One</option>
                                             <option value="pending">Pending</option>
