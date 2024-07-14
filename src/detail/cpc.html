@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail CPC</title>
     <link rel="stylesheet" href="../output.css">
+    <script src="https://kit.fontawesome.com/fbda0dcbb4.js" crossorigin="anonymous"></script>
+
   </head>
   <body class="font-sans bg-gradient-three-colors">
     <div class="flex justify-center">
@@ -105,18 +108,17 @@
             
                 <dialog id="my_modal_4" class="modal backdrop-blur-md modal-middle">
             
-                    <div class="">
-                        <div class="relative">
-                            <img src="../asset/studentcard.jpg" alt="">
-                        </div>
-            
-                      <div class="modal-action">
-                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
-                          <!-- if there is a button, it will close the modal -->
-                          <button class="btn">X</button>
-                        </form>
-                      </div>
+                  <div class="">
+                    <div class="relative">
+                        <img src="../asset/studentcard.jpg" alt="student card">
                     </div>
+                    <div class="modal-action">
+                        <div class="absolute top-0 right-2 md:top-10 md:right-10">
+                            <button type="button" class="text-5xl" onclick="document.getElementById('my_modal_4').close()"><i class="fa-solid fa-xmark"></i></button>
+
+                        </div>
+                    </div>
+                </div>
                   </dialog>
               </div>
             </div>
@@ -127,7 +129,7 @@
               <h1 class="text-3xl font-semibold text-white">Administarasi</h1>
               
               <div class="mt-4">
-                <label class="block font-semibold text-white" htmlFor="paymentProof"
+                <label class="block font-semibold text-white" htmlFor="payment proof"
                   >Upload Bukti Pembayaran</label
                 >
                 <div class="" onclick="my_modal_11.showModal()">
@@ -136,18 +138,17 @@
             
                 <dialog id="my_modal_11" class="modal backdrop-blur-md modal-middle">
             
-                    <div class="">
-                        <div class="relative">
-                            <img class="w-72" src="../asset/mceclip14.png" alt="">
-                        </div>
-            
-                      <div class="modal-action">
-                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
-                          <!-- if there is a button, it will close the modal -->
-                          <button class="btn">X</button>
-                        </form>
-                      </div>
+                  <div class="">
+                    <div class="relative">
+                        <img class="w-64" src="../asset/mceclip14.png" alt="payment proof">
                     </div>
+                    <div class="modal-action">
+                        <div class="absolute top-0 right-2 md:top-10 md:right-10">
+                            <button type="button" class="text-5xl" onclick="document.getElementById('my_modal_11').close()"><i class="fa-solid fa-xmark"></i></button>
+
+                        </div>
+                    </div>
+                </div>
                   </dialog>
               </div>
 
