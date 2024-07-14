@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css">
+  </head>
+  <body class="font-sans bg-gradient-three-colors">
+    <div class="flex justify-center">
+      <img class="" src="asset/studentcard.jpg" alt="" />
+    </div>
+    <h1 class="text-3xl font-semibold text-center text-white">
+      Formulir Pendaftaran LCT
+    </h1>
+
+    <div class="flex justify-center">
+      <div class="w-full px-4 pb-8 mt-5 md:max-w-xl">
+        <div class="p-8 bg-custom-gray rounded-3xl">
+          <div >
+            <!-- Profile Ketua Start -->
+            <div>
+              <h1 class="text-3xl font-semibold text-white">Profil Ketua</h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="fullnameLead"
+                  >Nama Lengkap</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="fullnameLead"
+                  type="text"
+                  name="fullnameLead"
+                  value="Nama Lengkap Ketua Tim"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="phoneLead"
+                  >No. Telpon</label
+                >
+                <input
+                  class="w-full text-white outline-none bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="phoneLead"
+                  type="text"
+                  name="phoneLead"
+                  value="08123456789"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="birthdateLead"
+                  >Tanggal Lahir</label
+                >
+                <input
+                  class="w-full text-white outline-none bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="birthdateLead"
+                  type="date"
+                  name="birthdateLead"
+                  value="2024-07-11"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="studentCardLead"
+                  >Kartu Pelajar
+                  <span class="font-normal text-slate-300"
+                    >Max 1 Mb</span
+                  ></label
+                >
+                <!-- Open the modal using ID.showModal() method -->
+                
+                <div class="" onclick="my_modal_4.showModal()">
+                    <img class="hover:cursor-pointer" src="../asset/studentcard.jpg" alt="">
+                </div>
+            
+                <dialog id="my_modal_4" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img src="../asset/studentcard.jpg" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+            </div>
+            <!-- Profile Ketua End -->
+            <!-- Profile Anggota 1 Start-->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">
+                Profil Anggota 1
+              </h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="fullnameMember1"
+                  >Nama Lengkap</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="fullnameMember1"
+                  type="text"
+                  name="fullnameMember1"
+                  value="member1"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="phoneMember1"
+                  >No. Telpon</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="phoneMember1"
+                  type="text"
+                  name="phoneMember1"
+                  value="08123456789"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="birthdateMember1"
+                  >Tanggal Lahir</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="birthdateMember1"
+                  type="date"
+                  name="birthdateMember1"
+                  value="2024-07-11"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label
+                  class="block font-semibold text-white" htmlFor="studentCardMember1"
+                  >Kartu Pelajar
+                  <span class="font-normal text-slate-300"
+                    >Max 1 Mb</span
+                  ></label
+                >
+                <div class="" onclick="my_modal_5.showModal()">
+                    <img class="hover:cursor-pointer" src="../asset/studentcard.jpg" alt="">
+                </div>
+            
+                <dialog id="my_modal_5" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img src="../asset/studentcard.jpg" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+            </div>
+            <!-- Profile Anggota 1 End -->
+
+            <!-- Profile Anggota 2 Start -->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">
+                Profil Anggota 2
+              </h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="fullnameMember2"
+                  >Nama Lengkap</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="fullnameMember2"
+                  type="text"
+                  name="fullnameMember2"
+                  value="Kairi"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="phoneMember2"
+                  >No. Telpon</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="phoneMember2"
+                  type="text"
+                  name="phoneMember2"
+                  value="0812345789"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="birthdateMember2"
+                  >Tanggal Lahir</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="birthdateMember2"
+                  type="date"
+                  name="birthdateMember2"
+                  value="2024-07-11"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label
+                  class="block font-semibold text-white" htmlFor="studentCardMember2"
+                  >Kartu Pelajar
+                  <span class="font-normal text-slate-300"
+                    >Max 1 Mb</span
+                  ></label
+                >
+                
+                <div class="" onclick="my_modal_6.showModal()">
+                    <img class="hover:cursor-pointer" src="../asset/studentcard.jpg" alt="">
+                </div>
+            
+                <dialog id="my_modal_6" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img src="../asset/studentcard.jpg" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+            </div>
+            <!-- Profile Anggota 2 End -->
+
+            <!-- Profile Pendamping Start -->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">
+                Profil Pendamping
+              </h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="fullnameAssistant"
+                  >Nama Lengkap</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="fullnameAssistant"
+                  type="text"
+                  name="fullnameAssistant"
+                  value="lionel messi"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="phoneAssistant"
+                  >No. Telpon</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="phoneAssistant"
+                  type="text"
+                  name="phoneAssistant"
+                  value="0812345789"
+                  readonly
+                />
+              </div>
+            </div>
+            <!-- Profile Pendamping End -->
+
+            <!-- Profile Tim Start -->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">Profil Tim</h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="email"
+                  >Email</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="email"
+                  type="email"
+                  name="email"
+                  value="l@gmail.com"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="institution"
+                  >Instansi</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="institution"
+                  type="text"
+                  name="institution"
+                  value="SMA Arjuna"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="teamName"
+                  >Nama Tim</label
+                >
+                <input
+                  class="text-white outline-none w-full bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="teamName"
+                  type="text"
+                  name="teamName"
+                  value="Tim Ganjar"
+                  readonly
+                />
+              </div>
+            </div>
+            <!-- Profile Tim End -->
+
+            <!-- Administarasi Start -->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">Administarasi</h1>
+              
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="paymentProof"
+                  >Upload Bukti Pembayaran</label
+                >
+                <div class="" onclick="my_modal_11.showModal()">
+                    <img class="hover:cursor-pointer w-72" src="../asset/mceclip14.png" alt="">
+                </div>
+            
+                <dialog id="my_modal_11" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img class="w-72" src="../asset/mceclip14.png" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="accountHolderName"
+                  >Atas Nama</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="accountHolderName"
+                  type="text"
+                  name="accountHolderName"
+                  value="Josep"
+                  readonly
+                />
+              </div>
+            </div>
+            <!-- Administrasi End -->
+            <div class="flex justify-center mt-8 text-white">
+              <button class="w-1/2 py-4 font-bold bg-opacity-80 hover:bg-opacity-100 bg-red-500 rounded-xl">
+                Kembali
+              </button>
+              
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

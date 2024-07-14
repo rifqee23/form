@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css">
+  </head>
+  <body class="font-sans bg-gradient-three-colors">
+    <div class="flex justify-center">
+      <img class="" src="asset/studentcard.jpg" alt="" />
+    </div>
+    <h1 class="text-3xl font-semibold text-center text-white">
+      Formulir Pendaftaran CPC
+    </h1>
+
+    <div class="flex justify-center">
+      <div class="w-full px-4 pb-8 mt-5 md:max-w-xl">
+        <div class="p-8 bg-custom-gray rounded-3xl">
+          <div >
+            <!-- Profile Peserta -->
+            <div>
+              <h1 class="text-3xl font-semibold text-white">Profil Peserta</h1>
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="email"
+                  >Email</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="email"
+                  type="email"
+                  name="email"
+                  value="email"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="fullname"
+                  >Nama Lengkap</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  value="Nama Lengkap"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="phone"
+                  >No. Telpon</label
+                >
+                <input
+                  class="text-white w-full outline-none bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="phone"
+                  type="text"
+                  name="phone"
+                  value="0000000000"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="institution"
+                  >Instansi</label
+                >
+                <input
+                  class="w-full text-white outline-none bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="institution"
+                  type="text"
+                  name="institution"
+                  value="Nama Instansi"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="birthdate"
+                  >Tanggal Lahir</label
+                >
+                <input
+                  class="w-full text-white outline-none bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="birthdate"
+                  type="date"
+                  name="birthdate"
+                  value="2024-07-11"
+                  readonly
+                />
+              </div>
+
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="studentCard"
+                  >Kartu Identitas Diri
+                  <span class="font-normal text-slate-300"
+                    >Max 1 Mb</span
+                  ></label
+                >
+                <!-- Open the modal using ID.showModal() method -->
+                
+                <div class="" onclick="my_modal_4.showModal()">
+                    <img class="hover:cursor-pointer" src="../asset/studentcard.jpg" alt="">
+                </div>
+            
+                <dialog id="my_modal_4" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img src="../asset/studentcard.jpg" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+            </div>
+            <!-- Profile Peserta End-->
+
+            <!-- Administarasi Start -->
+            <div class="mt-8">
+              <h1 class="text-3xl font-semibold text-white">Administarasi</h1>
+              
+              <div class="mt-4">
+                <label class="block font-semibold text-white" htmlFor="paymentProof"
+                  >Upload Bukti Pembayaran</label
+                >
+                <div class="" onclick="my_modal_11.showModal()">
+                    <img class="hover:cursor-pointer w-72" src="../asset/mceclip14.png" alt="">
+                </div>
+            
+                <dialog id="my_modal_11" class="modal backdrop-blur-md modal-middle">
+            
+                    <div class="">
+                        <div class="relative">
+                            <img class="w-72" src="../asset/mceclip14.png" alt="">
+                        </div>
+            
+                      <div class="modal-action">
+                        <form method="dialog" class="absolute top-10 right-5 md:top-10 md:right-20" >
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">X</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+
+              <div class="mt-2">
+                <label class="block font-semibold text-white" htmlFor="accountHolderName"
+                  >Atas Nama</label
+                >
+                <input
+                  class="w-full outline-none text-white bg-[#D9D9D933] py-2 mt-1 px-2 shadow-custom rounded-lg"
+                  id="accountHolderName"
+                  type="text"
+                  name="accountHolderName"
+                  value="Pembayar Atas Nama"
+                  readonly
+                />
+              </div>
+            </div>
+            <!-- Administrasi End -->
+            <div class="flex justify-center mt-8 text-white">
+              <button class="w-1/2 py-4 font-bold bg-opacity-80 hover:bg-opacity-100 bg-red-500 rounded-xl">
+                Kembali
+              </button>
+              
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
